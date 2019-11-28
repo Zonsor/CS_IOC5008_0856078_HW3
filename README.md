@@ -7,10 +7,10 @@ Detectron2 on windows: https://github.com/conansherry/detectron2
 
 # Speed benchmark:
   ![image](https://github.com/Zonsor/CS_IOC5008_0856078_HW3/blob/master/inference_time.png)
-　Because I use detectron2 in this homework, the inference code is only one line. And TA said “we only need to choose one image to do inference.”. However, I am still not sure whether this is valid format or not. The result is about 65.5 ms.
+　Because I use detectron2 in this homework, the inference code is only one line. And TA said “we only need to choose one image to do inference.”. However, I am still not sure whether this is valid format or not. The result is about ***65.5 ms***.
 
 # Brief introduction:
-　The task of this homework is to do digits detection on Street View House Numbers (SVHN) dataset. There are 33402 training images and 13068 test images in this dataset. I use detectron2 to train faster R-CNN with a ResNet50+FPN (feature pyramid networks) backbone. The result of mAP is 0.46726.
+　The task of this homework is to do digits detection on Street View House Numbers (SVHN) dataset. There are 33402 training images and 13068 test images in this dataset. I use detectron2 to train faster R-CNN with a ResNet50+FPN (feature pyramid networks) backbone. The result of mAP is ***0.46726***.
 
 # Methodology:
 　This homework I did is mainly follow the tutorial of Detectron2. Detectron2 is Facebook AI Research's next generation software system that implements state-of-the-art object detection algorithms. It provides many kinds of models like faster R-CNN and RetinaNet. Besides, this codebase can do not only object detection but also instance segmentation and so on. I choose faster R-CNN with a ResNet50+FPN backbone to complete this task because the trade off between precision and speed.
