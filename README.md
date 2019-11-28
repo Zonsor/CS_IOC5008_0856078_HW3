@@ -1,5 +1,6 @@
 # CS_IOC5008_0856078_HW3 
 # Note
+　The uploaded files do not contain Detectron2. You should build Detectron2 first. If your OS is linux, follow Detecron2 GitHub directly. If your OS is win10, you can follow the "Findings or Summary". Those steps is basically from conansherry's GitHub. I just change a little bit to get work on my computer. After building Detectron2, place the files of this repository into Detectron2 main folder.  
 
 # Reference from GitHub:
 Detectron2: https://github.com/facebookresearch/detectron2  
