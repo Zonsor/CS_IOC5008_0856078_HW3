@@ -1,24 +1,24 @@
-# CS_IOC5008_0856078_HW3
-GitHub link: https://github.com/Zonsor/CS_IOC5008_0856078_HW3  
+# CS_IOC5008_0856078_HW3 
+# Note
 
-Reference from GitHub:
+# Reference from GitHub:
 Detectron2: https://github.com/facebookresearch/detectron2  
 Detectron2 on windows: https://github.com/conansherry/detectron2
 
-Speed benchmark:
+# Speed benchmark:
 
 Figure 1. Inference time on Colab (65.5 ms/image)  
   Because I use detectron2 in this homework, the inference code is only one line. And TA said “we only need to choose one image to do inference.”. However, I am still not sure whether this is valid format or not. The result is about 65.5 ms.
 
-Brief introduction:
+# Brief introduction:
        
 Figure 2. The successful examples
   The task of this homework is to do digits detection on Street View House Numbers (SVHN) dataset. There are 33402 training images and 13068 test images in this dataset. I use detectron2 to train faster R-CNN with a ResNet50+FPN (feature pyramid networks) backbone. The result of mAP is 0.46726. Figure 2 shows some successful examples.
 
-Methodology:
+# Methodology:
   This homework I did is mainly follow the tutorial of Detectron2. Detectron2 is Facebook AI Research's next generation software system that implements state-of-the-art object detection algorithms. It provides many kinds of models like faster R-CNN and RetinaNet. Besides, this codebase can do not only object detection but also instance segmentation and so on. I choose faster R-CNN with a ResNet50+FPN backbone to complete this task because the trade off between precision and speed.
 
-Findings or Summary:
+# Findings or Summary:
   To be honest, I don’t make much effort to get better accuracy. However, building environment and processing annotation really take much time. Therefore, I want to explain how I build Detectron2 on Windows. I believe this report will help me build Detectron2 on Windows successfully again in future. Detecron2 is mainly for Linux. If we build it on Linux, I think it is not difficult. Nevertheless, when I build it on Windows, facing many kinds of difficulty. Even though I build it successfully, the program can not still run correctly. The following statements are building steps.  
 1. Open the GitHub website “Detectron2 on windows” I mentioned in reference.  
 2. Make sure your python environment meet the “Requirements” mentioned in GitHub.  
