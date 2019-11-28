@@ -6,7 +6,7 @@ Detectron2: https://github.com/facebookresearch/detectron2
 Detectron2 on windows: https://github.com/conansherry/detectron2
 
 # Speed benchmark:
-  
+  ![image](https://github.com/Zonsor/CS_IOC5008_0856078_HW3/blob/master/inference_time.png)
 　Because I use detectron2 in this homework, the inference code is only one line. And TA said “we only need to choose one image to do inference.”. However, I am still not sure whether this is valid format or not. The result is about 65.5 ms.
 
 # Brief introduction:
