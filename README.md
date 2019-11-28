@@ -3,10 +3,10 @@
 　The uploaded files do not contain Detectron2. You should build Detectron2 first. If your OS is linux, follow Detecron2 GitHub directly. If your OS is win10, you can follow the "Findings or Summary". Those steps is basically from conansherry's GitHub. I just change a little bit to get work on my computer. After building Detectron2, place the files of this repository into Detectron2 main folder.
  
 ***demo.py:*** This .py file is based on the Colab Notebook of Detecton2. It only contains the code of predicted part. After building, you can run this file to check whether Detectron2 can work or not.  
-***detectron2_dataset.py:***
-***HW3.py:***
-***HW3_inference_time.ipynb:***
-***inference_time.png:***
+***detectron2_dataset.py:*** This file is for constructing annotaion from SVHN dataset format (.mat file) to Detectron2 format(.json). Because some variables are not JSON serializable, I convert them to list first, and transform them back in HW3.py for convenience.  
+***HW3.py:*** This is the main file for HW3. It contains training part and testing part. You can tune some hyperparameters here. Amd make sure the file path is modified correctly by you.  
+***HW3_inference_time.ipynb:*** This file format is belong to Jupyter Notebook. You should open it with Google Colab. And you can see the inference time.(You should unpload the weight file and testing images first)  
+***inference_time.png:*** the result of inference time
 # Reference from GitHub:
 Detectron2: https://github.com/facebookresearch/detectron2  
 Detectron2 on windows: https://github.com/conansherry/detectron2
